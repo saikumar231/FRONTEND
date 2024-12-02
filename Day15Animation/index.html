@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            position: relative;
+            background-color: bisque;
+            animation-name: box;
+            animation-duration: 2s;
+        }
+            @keyframes box{
+                
+                 0%{left: 0px; transform: rotate(30deg);}   
+                50%{left: 100px; transform: rotate(90deg);}
+                200%{left: 200px; transform: rotate(180deg);}
+                    
+                
+            }
+
+          .movingbox{
+            width: 100px;
+            height: 100px;
+            position: relative;
+            background-color: rgb(59, 187, 34);
+            animation-name: movingbox;
+            animation-duration:2s;
+            animation-iteration-count: infinite;
+          }  
+
+          @keyframes movingbox {
+            0%{top: 0px;}
+            50%{top: 50px;}
+            100%{top: 0px;}
+          }
+    </style>
+
+</head>
+<body>
+    
+</body>
+<div class="box">
+    <div class="movingbox"></div>
+</div>
+</html>
